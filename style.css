@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+body{
+    font-size: clamp(18px, 1.6vw, 26px);
+    margin: 0px;
+    padding-top: 120px;
+    overflow-x: hidden;
+}
+form{
+    display:block;
+}
+input{
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+textarea{
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 16px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+.button{
+    width: 150px;
+    padding: 10px 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
+    color: black;
+}
+button:hover{
+    background: green;
+    color: white;
+}
+.header {
+    background-color: green;
+    width: 100%;
+    height: 90px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header img {
+    height: 70px;
+    width: auto;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.menu a:hover {
+    color: #ffd700;
+}
+.social {
+    display: flex;
+    gap: 20px;
+}
+.social a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.social a:hover {
+    color: #ffd700;
+}
+.footer {
+    background-color: green;
+    color: white;
+    padding: 40px 20px;
+    font-size: 16px;
+    margin-top: 100px;
+}
+.footer-top {
+    margin-bottom: 20px;
+}
+.footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footer-box {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-box h4 {
+    color: white;
+    font-size: 20px;
+}
+.footer-box a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.footer-box a:hover {
+    color: #ffd700;
+}
+.footer-icon {
+    margin-right: 8px;
+}
+
+/**dùng cho scale theo điện thoại**/
+@media (max-width: 768px) {
+    body{
+        font-size: 16px;
+        padding-top: 160px;
+    }
+    .header{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .chu{
+        width: 100%;
+        padding-left: 0;  
+        text-align: center;
+    }
+    .chu ul{
+        text-align: left;
+    }
+    .anh{
+        width: 100%;
+        margin: 0;
+    }
+    .food-img{
+        width: 100%;
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
