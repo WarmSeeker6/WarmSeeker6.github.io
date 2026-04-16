@@ -132,6 +132,10 @@ button:hover{
 .footer-icon {
     margin-right: 8px;
 }
+@font-face {
+    font-family: 'GoodVibrationsScript';
+    src: url(../font/GoodVibrationsScript.ttf);
+}
 
 /**dùng cho scale theo điện thoại**/
 @media (max-width: 768px) {
