@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 html, body{
     width: 100%;
@@ -135,6 +134,18 @@ button:hover{
 @font-face {
     font-family: 'GoodVibrationsScript';
     src: url(../font/GoodVibrationsScript.ttf);
+}
+@font-face {
+    font-family: 'Simplesnail';
+    src: url(../font/SimplesnailsVer40-6Lpx.ttf);
+}
+@font-face {
+    font-family: 'Xarrovv';
+    src: url(../font/Xarrovv-7DBR.otf);
+}
+@font-face {
+    font-family: 'Opsilon';
+    src: url(../font/Opsilon-xRj8m.ttf);
 }
 
 /**dùng cho scale theo điện thoại**/

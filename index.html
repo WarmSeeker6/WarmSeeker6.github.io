@@ -15,15 +15,31 @@
             background-repeat: no-repeat;
             min-height: 100vh;
         }
-        fieldset{
-            border: 1px solid gray;
-            width: 80vh;
-            height: 35vh;
-            align-items: center;
-            margin: 0 auto;
-        }
         h1{
             font-family: 'GoodVibrationsScript';
+        }
+        .whitebackground{
+            background-color: white;
+            width: 100%;
+            padding: 100px 0;
+            margin-top: 10vh;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 300px 1fr 300px;
+            gap: 40px;
+            align-items: center;
+            padding: 40px 80px;
+            margin: 0 auto;
+        }
+        .container img{
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .container div{
+            text-align: center;
         }
     </style>
 </head>
@@ -45,10 +61,15 @@
         </div>
     </div>
 
-    <div>
-        <fieldset>
-            <h1 style="text-align: center; color: #EF9C1A; margin: 10vh auto; font-size: 500%;">Welcome</h1>
-        </fieldset>
+    <div class="container whitebackground">
+        <img src="assets/img/Hue/CauTruongTien.jpg" alt="Cầu Trường Tiền">
+        <div>
+            <h1 style="text-align: center; color: #EF9C1A; font-size: 350%;"> Welcome</h1>
+            <p style="font-family: 'Simplesnail'; font-size: 120%; text-align: center;">Trong số gần 3.000 món ăn của cả nước, thì món ăn Huế đã chiếm hơn 65%, với hai dòng ẩm thực chủ đạo là Ẩm thực
+                cung đình và Ẩm thực dân gian Huế. Với ưu thế đó, Thừa Thiên Huế đang xây dựng thương hiệu cho mình để trở thành một thủ phủ,
+                kinh đô ẩm thực, nâng cao hình ảnh của Ẩm thực Huế trong khu vực và trên thế giới.</p>
+        </div>
+        <img src="assets/img/Hue/DaiNoi.jpg" alt="Đại Nội">
     </div>
 
 
